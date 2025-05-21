@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real-Time Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Real-Time Chat</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Enter your name" required />
+      <button type="submit">Join</button>
+    </form>
+
+    <div id="chatSection" class="hidden">
+      <div class="chat-box">
+        <div id="messages"></div>
+      </div>
+      <form id="chatForm">
+        <input type="text" id="to" placeholder="Recipient" required />
+        <input type="text" id="message" placeholder="Type a message" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
