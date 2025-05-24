@@ -1,5 +1,4 @@
 const socket = io();
-
 const loginForm = document.getElementById('loginForm');
 const chatForm = document.getElementById('chatForm');
 const chatSection = document.getElementById('chatSection');
